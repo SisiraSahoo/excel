@@ -319,9 +319,10 @@ class Parser {
           final numFmtId = int.parse(node.getAttribute('numFmtId')!);
           final formatCode = node.getAttribute('formatCode')!;
           if (numFmtId >= 164) {
-            _excel._numFormats
+             }
+             _excel._numFormats
                 .add(numFmtId, NumFormat.custom(formatCode: formatCode));
-          }
+         
         });
       });
 
